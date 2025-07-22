@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MINH NGO Profile</title>
+  <title>HUNG VUONG Profile</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
@@ -89,6 +89,7 @@
       box-shadow: 0 0 10px #0ff;
       font-size: 14px;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .links button:hover {
@@ -148,19 +149,17 @@
 </head>
 <body>
   <div class="container">
-    <div class="fps">FPS: 41.8</div>
+    <div class="fps">FPS: 99.9</div>
     <div class="profile">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Meta_Platforms_Inc._logo.svg/2048px-Meta_Platforms_Inc._logo.svg.png" alt="Logo" class="logo" />
-      <h1>MINH NGO</h1>
+      <h1>HUNG VUONG</h1>
       <button class="neon-btn">Dịch vụ</button>
-      <button class="neon-btn">RBL-LQ-DV FB</button>
+      <button class="neon-btn">CHAT SÉT-DÂM GAY</button>
+
       <div class="links">
-  <button class="neon-btn" onclick="window.open('https://checkout.example.com', '_blank')">CHECKOUT</button>
-  <button class="neon-btn" onclick="window.open('https://www.facebook.com/nguyen.hung.vuong.759003', '_blank')">Facebook</button>
-  <button class="neon-btn" onclick="window.open('https://zalo.me/0816038707', '_blank')">Zalo</button>
-  <button class="neon-btn" onclick="window.open('https://www.tiktok.com/@metagaya1?_t=ZS-8yEDVQKbKZk&_r=1', '_blank')">TikTok</button>
-  <button class="neon-btn" onclick="window.open('https://t.me/minhngo', '_blank')">Telegram</button>
-</div>
+        <button onclick="window.open('https://www.facebook.com/nguyen.hung.vuong.759003', '_blank')">Facebook</button>
+        <button onclick="window.open('https://zalo.me/081603870', '_blank')">Zalo</button>
+        <button onclick="window.open('https://www.tiktok.com/@metagaya1?_t=ZS-8yEEZqJyhur&_r=1', '_blank')">TikTok</button>
       </div>
     </div>
   </div>
@@ -174,49 +173,11 @@
     Trình duyệt của bạn không hỗ trợ phát nhạc.
   </audio>
 
-  <!-- Script tạo dot neon -->
+  <!-- Dot neon -->
   <script>
     function createDot() {
       const dot = document.createElement("div");
       dot.classList.add("dot");
 
       dot.style.left = Math.random() * window.innerWidth + "px";
-      dot.style.animationDuration = (Math.random() * 3 + 2) + "s";
-      dot.style.width = dot.style.height = (Math.random() * 6 + 4) + "px";
-      dot.style.opacity = Math.random();
-
-      document.body.appendChild(dot);
-
-      setTimeout(() => {
-        dot.remove();
-      }, 5000);
-    }
-
-    setInterval(createDot, 150);
-  </script>
-
-  <!-- Script phát nhạc -->
-  <script>
-    const music = document.getElementById("bg-music");
-    const button = document.querySelector(".music-btn");
-
-    function toggleMusic() {
-      if (music.paused) {
-        music.play();
-        button.textContent = "Tạm dừng nhạc";
-      } else {
-        music.pause();
-        button.textContent = "Phát nhạc";
-      }
-    }
-
-    // Auto phát sau lần click đầu tiên
-    document.body.addEventListener('click', function autoPlayOnce() {
-      music.play();
-      button.textContent = "Tạm dừng nhạc";
-      document.body.removeEventListener('click', autoPlayOnce);
-    });
-  </script>
-</body>
-</html>
-Ổn chưa
+      dot.style.animationDuration = (Math.random() * 3 + 2) + "s";*
