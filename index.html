@@ -89,6 +89,7 @@
       box-shadow: 0 0 10px #0ff;
       font-size: 14px;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .links button:hover {
@@ -148,17 +149,19 @@
 </head>
 <body>
   <div class="container">
-    <div class="fps">FPS: 41.8</div>
+    <div class="fps">FPS: 99.9</div>
+
     <div class="profile">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Meta_Platforms_Inc._logo.svg/2048px-Meta_Platforms_Inc._logo.svg.png" alt="Logo" class="logo" />
       <h1>VUONG TRUM MAI DAM</h1>
+
       <button class="neon-btn">Dịch vụ</button>
-      <button class="neon-btn">CHAT SEX- CALL DAM</button>
+      <button class="neon-btn">CHAT SEX - CALL ĐẦM</button>
+
       <div class="links">
-        <button>CHECKUT</button>
         <button onclick="window.open('https://www.facebook.com/nguyen.hung.vuong.759003', '_blank')">FACEBOOK</button>
-        <button>TIKTOK</button>
-        <button>Telegram</button>
+        <button onclick="window.open('https://zalo.me/081603870', '_blank')">ZALO</button>
+        <button onclick="window.open('https://www.tiktok.com/@metagaya1?_t=ZS-8yEEZqJyhur&_r=1', '_blank')">TIKTOK</button>
       </div>
     </div>
   </div>
@@ -172,7 +175,7 @@
     Trình duyệt của bạn không hỗ trợ phát nhạc.
   </audio>
 
-  <!-- Script tạo dot neon -->
+  <!-- Dot neon hiệu ứng -->
   <script>
     function createDot() {
       const dot = document.createElement("div");
@@ -193,7 +196,7 @@
     setInterval(createDot, 150);
   </script>
 
-  <!-- Script phát nhạc -->
+  <!-- Script phát nhạc và tự phát -->
   <script>
     const music = document.getElementById("bg-music");
     const button = document.querySelector(".music-btn");
@@ -208,12 +211,21 @@
       }
     }
 
-    // Auto phát sau lần click đầu tiên
     document.body.addEventListener('click', function autoPlayOnce() {
       music.play();
       button.textContent = "Tạm dừng nhạc";
       document.body.removeEventListener('click', autoPlayOnce);
     });
+  </script>
+
+  <!-- FPS thay đổi liên tục -->
+  <script>
+    const fpsElement = document.querySelector(".fps");
+    function updateFPS() {
+      const fps = (Math.random() * (144.9 - 59.8) + 59.8).toFixed(1);
+      fpsElement.textContent = `FPS: ${fps}`;
+    }
+    setInterval(updateFPS, 300);
   </script>
 </body>
 </html>
