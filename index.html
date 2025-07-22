@@ -1,219 +1,220 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MINH NGO Profile</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MINH NGO Profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-    body {
-      margin: 0;
-      background: radial-gradient(#111, #000);
-      font-family: 'Orbitron', sans-serif;
-      color: cyan;
-      text-align: center;
-      overflow-x: hidden;
-    }
+    body {
+      margin: 0;
+      background: radial-gradient(#111, #000);
+      font-family: 'Orbitron', sans-serif;
+      color: cyan;
+      text-align: center;
+      overflow-x: hidden;
+    }
 
-    .container {
-      padding: 20px;
-      position: relative;
-    }
+    .container {
+      padding: 20px;
+      position: relative;
+    }
 
-    .fps {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-size: 16px;
-      color: #0ff;
-      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 5px 10px;
-      border-radius: 8px;
-    }
+    .fps {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 16px;
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
 
-    .profile {
-      margin-top: 60px;
-    }
+    .profile {
+      margin-top: 60px;
+    }
 
-    .logo {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 4px solid cyan;
-      box-shadow: 0 0 20px cyan, 0 0 40px #0ff;
-      background: white;
-    }
+    .logo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid cyan;
+      box-shadow: 0 0 20px cyan, 0 0 40px #0ff;
+      background: white;
+    }
 
-    h1 {
-      color: #0ff;
-      text-shadow: 0 0 5px #0ff, 0 0 20px #0ff;
-      font-size: 32px;
-      margin: 20px 0;
-    }
+    h1 {
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff, 0 0 20px #0ff;
+      font-size: 32px;
+      margin: 20px 0;
+    }
 
-    .neon-btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 30px;
-      color: #0ff;
-      border: 2px solid #0ff;
-      background: rgba(0, 0, 0, 0.3);
-      font-weight: bold;
-      font-size: 16px;
-      text-shadow: 0 0 5px #0ff;
-      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
+    .neon-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 30px;
+      color: #0ff;
+      border: 2px solid #0ff;
+      background: rgba(0, 0, 0, 0.3);
+      font-weight: bold;
+      font-size: 16px;
+      text-shadow: 0 0 5px #0ff;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
 
-    .neon-btn:hover {
-      background-color: rgba(0, 255, 255, 0.1);
-      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
-    }
+    .neon-btn:hover {
+      background-color: rgba(0, 255, 255, 0.1);
+      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
+    }
 
-    .links {
-      margin-top: 30px;
-    }
+    .links {
+      margin-top: 30px;
+    }
 
-    .links button {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 25px;
-      color: #0ff;
-      background: transparent;
-      border: 2px solid #0ff;
-      border-radius: 8px;
-      text-shadow: 0 0 5px #0ff;
-      box-shadow: 0 0 10px #0ff;
-      font-size: 14px;
-      font-weight: bold;
-    }
+    .links button {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 25px;
+      color: #0ff;
+      background: transparent;
+      border: 2px solid #0ff;
+      border-radius: 8px;
+      text-shadow: 0 0 5px #0ff;
+      box-shadow: 0 0 10px #0ff;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-    .links button:hover {
-      background: rgba(0, 255, 255, 0.1);
-      box-shadow: 0 0 20px #0ff;
-    }
+    .links button:hover {
+      background: rgba(0, 255, 255, 0.1);
+      box-shadow: 0 0 20px #0ff;
+    }
 
-    .dot {
-      position: fixed;
-      top: -20px;
-      left: 0;
-      width: 10px;
-      height: 10px;
-      background: #0ff;
-      border-radius: 50%;
-      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-      pointer-events: none;
-      z-index: 9999;
-      animation: fall-dot linear;
-    }
+    .dot {
+      position: fixed;
+      top: -20px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background: #0ff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      pointer-events: none;
+      z-index: 9999;
+      animation: fall-dot linear;
+    }
 
-    @keyframes fall-dot {
-      from {
-        transform: translateY(0);
-        opacity: 1;
-      }
-      to {
-        transform: translateY(100vh);
-        opacity: 0;
-      }
-    }
+    @keyframes fall-dot {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
 
-    /* Nút phát nhạc */
-    .music-btn {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 15px 30px;
-      font-size: 16px;
-      font-weight: bold;
-      color: cyan;
-      background: rgba(0, 0, 0, 0.5);
-      border: 2px solid cyan;
-      border-radius: 12px;
-      cursor: pointer;
-      text-shadow: 0 0 10px cyan;
-      box-shadow: 0 0 20px #0ff;
-      z-index: 10000;
-    }
+    /* Nút phát nhạc */
+    .music-btn {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      color: cyan;
+      background: rgba(0, 0, 0, 0.5);
+      border: 2px solid cyan;
+      border-radius: 12px;
+      cursor: pointer;
+      text-shadow: 0 0 10px cyan;
+      box-shadow: 0 0 20px #0ff;
+      z-index: 10000;
+    }
 
-    .music-btn:hover {
-      background: rgba(0, 255, 255, 0.1);
-      box-shadow: 0 0 30px #0ff;
-    }
-  </style>
+    .music-btn:hover {
+      background: rgba(0, 255, 255, 0.1);
+      box-shadow: 0 0 30px #0ff;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="fps">FPS: 41.8</div>
-    <div class="profile">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Meta_Platforms_Inc._logo.svg/2048px-Meta_Platforms_Inc._logo.svg.png" alt="Logo" class="logo" />
-      <h1>MINH NGO</h1>
-      <button class="neon-btn">Dịch vụ</button>
-      <button class="neon-btn">RBL-LQ-DV FB</button>
-      <div class="links">
-        <button>CHECKUT</button>
-        <button>Facebook</button>
-        <button>TIKTOK</button>
-        <button>Telegram</button>
-      </div>
-    </div>
-  </div>
+  <div class="container">
+    <div class="fps">FPS: 41.8</div>
+    <div class="profile">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Meta_Platforms_Inc._logo.svg/2048px-Meta_Platforms_Inc._logo.svg.png" alt="Logo" class="logo" />
+      <h1>MINH NGO</h1>
+      <button class="neon-btn">Dịch vụ</button>
+      <button class="neon-btn">RBL-LQ-DV FB</button>
+      <div class="links">
+  <a href="https://checkout.example.com" class="neon-btn" target="_blank">CHECKOUT</a>
+  <a href="https://www.facebook.com/nguyen.hung.vuong.759003" class="neon-btn" target="_blank">Facebook</a>
+  <a href="https://zalo.me/0816038707" class="neon-btn" target="_blank">Zalo</a>
+  <a href="https://www.tiktok.com/@metagaya1?_t=ZS-8yEDVQKbKZk&_r=1" class="neon-btn" target="_blank">TikTok</a>
+  <a href="https://t.me/minhngo" class="neon-btn" target="_blank">Telegram</a>  
+      </div>
+    </div>
+  </div>
 
-  <!-- Nút nhạc -->
-  <button class="music-btn" onclick="toggleMusic()">Phát nhạc</button>
+  <!-- Nút nhạc -->
+  <button class="music-btn" onclick="toggleMusic()">Phát nhạc</button>
 
-  <!-- Audio -->
-  <audio id="bg-music" loop preload="auto">
-    <source src="https://media.vocaroo.com/mp3/16cxaqpVQIn3" type="audio/mp3">
-    Trình duyệt của bạn không hỗ trợ phát nhạc.
-  </audio>
+  <!-- Audio -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="https://media.vocaroo.com/mp3/16cxaqpVQIn3" type="audio/mp3">
+    Trình duyệt của bạn không hỗ trợ phát nhạc.
+  </audio>
 
-  <!-- Script tạo dot neon -->
-  <script>
-    function createDot() {
-      const dot = document.createElement("div");
-      dot.classList.add("dot");
+  <!-- Script tạo dot neon -->
+  <script>
+    function createDot() {
+      const dot = document.createElement("div");
+      dot.classList.add("dot");
 
-      dot.style.left = Math.random() * window.innerWidth + "px";
-      dot.style.animationDuration = (Math.random() * 3 + 2) + "s";
-      dot.style.width = dot.style.height = (Math.random() * 6 + 4) + "px";
-      dot.style.opacity = Math.random();
+      dot.style.left = Math.random() * window.innerWidth + "px";
+      dot.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      dot.style.width = dot.style.height = (Math.random() * 6 + 4) + "px";
+      dot.style.opacity = Math.random();
 
-      document.body.appendChild(dot);
+      document.body.appendChild(dot);
 
-      setTimeout(() => {
-        dot.remove();
-      }, 5000);
-    }
+      setTimeout(() => {
+        dot.remove();
+      }, 5000);
+    }
 
-    setInterval(createDot, 150);
-  </script>
+    setInterval(createDot, 150);
+  </script>
 
-  <!-- Script phát nhạc -->
-  <script>
-    const music = document.getElementById("bg-music");
-    const button = document.querySelector(".music-btn");
+  <!-- Script phát nhạc -->
+  <script>
+    const music = document.getElementById("bg-music");
+    const button = document.querySelector(".music-btn");
 
-    function toggleMusic() {
-      if (music.paused) {
-        music.play();
-        button.textContent = "Tạm dừng nhạc";
-      } else {
-        music.pause();
-        button.textContent = "Phát nhạc";
-      }
-    }
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+        button.textContent = "Tạm dừng nhạc";
+      } else {
+        music.pause();
+        button.textContent = "Phát nhạc";
+      }
+    }
 
-    // Auto phát sau lần click đầu tiên
-    document.body.addEventListener('click', function autoPlayOnce() {
-      music.play();
-      button.textContent = "Tạm dừng nhạc";
-      document.body.removeEventListener('click', autoPlayOnce);
-    });
-  </script>
+    // Auto phát sau lần click đầu tiên
+    document.body.addEventListener('click', function autoPlayOnce() {
+      music.play();
+      button.textContent = "Tạm dừng nhạc";
+      document.body.removeEventListener('click', autoPlayOnce);
+    });
+  </script>
 </body>
 </html>
